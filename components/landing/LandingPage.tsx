@@ -10,16 +10,39 @@ import { LandingTestimonials } from "@/components/landing/LandingTestimonials";
 
 export function LandingPage() {
   return (
-    <>
-      <CustomCursor />
-      <LandingHero />
-      <LandingStats />
-      <LandingSkills />
-      <LandingPractice />
-      {/* <LandingTestimonials /> */}
-      <LandingFaq />
-      <LetsConnect />
-      <Footer />
-    </>
+    <div style={{ position: "relative", minHeight: "100vh" }}>
+      {/* Global Background Video */}
+      <video
+        src="/bg.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: "100vh",
+          objectFit: "cover",
+          zIndex: -1,
+          opacity: 0.6, // Dim the video slightly so text remains readable
+          pointerEvents: "none",
+        }}
+      />
+      
+      {/* The rest of the landing page content */}
+      <div style={{ position: "relative", zIndex: 1 }}>
+        <CustomCursor />
+        <LandingHero />
+        <LandingStats />
+        <LandingSkills />
+        <LandingPractice />
+        <LandingTestimonials />
+        <LandingFaq />
+        <LetsConnect />
+        <Footer />
+      </div>
+    </div>
   );
 }

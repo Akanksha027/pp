@@ -91,7 +91,7 @@ export function LandingPractice() {
   return (
     <section
       ref={sectionRef}
-      className={`bg-black text-white ${mainFont.className}`}
+      className={`bg-transparent text-white ${mainFont.className}`}
     >
       <div className="mx-auto max-w-[1400px] px-5 pb-20 pt-8 sm:px-10 md:px-14 lg:px-16 lg:pb-32 lg:pt-12">
         <div className="mb-8 flex max-w-full items-start justify-between gap-4 sm:mb-10 md:mb-14">

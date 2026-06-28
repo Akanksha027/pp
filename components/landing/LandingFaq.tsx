@@ -59,7 +59,7 @@ export function LandingFaq() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className={`relative z-0 bg-black pt-8 text-white md:pt-12 ${mainFont.className}`}>
+    <section className={`relative z-0 bg-transparent pt-8 text-white md:pt-12 ${mainFont.className}`}>
       <div className="mx-auto max-w-[1400px] px-5 sm:px-10 md:px-14 lg:px-16">
         <div className="flex flex-col gap-2 border-b border-white/20 py-4 text-[10px] font-medium uppercase tracking-[0.14em] text-white/75 sm:flex-row sm:items-center sm:justify-between sm:text-[11px]">
           <span className="truncate">© HELP CENTER ヘルプ</span>

@@ -8,7 +8,7 @@ const STATS = [
 
 export function LandingStats() {
   return (
-    <section className={`border-t border-white/10 bg-black text-white ${mainFont.className}`}>
+    <section className={`border-t border-white/10 bg-transparent text-white ${mainFont.className}`}>
       <div className="mx-auto max-w-[1400px] px-5 py-14 sm:px-10 sm:py-16 md:px-14 lg:px-16 lg:py-20">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8 md:gap-12">
           {STATS.map((stat) => (

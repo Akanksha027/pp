@@ -74,7 +74,7 @@ export function LandingSkills() {
   return (
     <section
       ref={sectionRef}
-      className={`bg-black text-white ${mainFont.className}`}
+      className={`bg-transparent text-white ${mainFont.className}`}
     >
       <div className="mx-auto max-w-[1400px] px-5 pb-20 pt-16 sm:px-10 sm:pb-24 sm:pt-20 md:px-14 lg:px-16 lg:pb-32 lg:pt-28">
         <motion.div

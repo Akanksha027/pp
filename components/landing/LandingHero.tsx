@@ -278,26 +278,7 @@ export function LandingHero() {
 
   if (isMobile) {
     return (
-      <div className="landing-hero-mobile" style={{ position: "relative", overflow: "hidden", backgroundColor: "#000000" }}>
-        {/* Background Video */}
-        <video
-          src="/bg.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            zIndex: 0,
-            opacity: 0.6,
-            pointerEvents: "none",
-          }}
-        />
+      <div className="landing-hero-mobile" style={{ position: "relative", overflow: "hidden", backgroundColor: "transparent" }}>
 
         <div style={{ position: "relative", zIndex: 10 }}>
           <div className="landing-hero-mobile-intro">{renderHeroCopy()}</div>
@@ -355,29 +336,10 @@ export function LandingHero() {
             position: "sticky",
             top: HEADER_OFFSET,
             height: stickyHeight,
-            backgroundColor: "#000000",
+            backgroundColor: "transparent",
             overflow: "visible",
           }}
         >
-          {/* Background Video */}
-          <video
-            src="/bg.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              zIndex: 0,
-              opacity: 0.6, // Dim the video slightly so text remains readable
-              pointerEvents: "none",
-            }}
-          />
 
           <div
             className="landing-hero-copy"

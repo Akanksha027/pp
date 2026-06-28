@@ -89,7 +89,7 @@ export function LandingTestimonials() {
   if (isMobile) {
     return (
       <section
-        className={`relative bg-black px-5 pb-16 pt-10 text-white sm:px-8 ${mainFont.className}`}
+        className={`relative bg-transparent px-5 pb-16 pt-10 text-white sm:px-8 ${mainFont.className}`}
       >
         <MarqueeStrip />
         <Link
@@ -110,11 +110,11 @@ export function LandingTestimonials() {
 
   return (
     <section
-      className={`relative z-10 bg-black pb-20 text-white md:pb-32 ${mainFont.className}`}
+      className={`relative z-10 bg-transparent pb-20 text-white md:pb-32 ${mainFont.className}`}
     >
       <div className="relative" style={{ height: scrollHeight }}>
         <div
-          className="sticky z-0 flex flex-col items-center justify-center overflow-hidden bg-black px-4"
+          className="sticky z-0 flex flex-col items-center justify-center overflow-hidden bg-transparent px-4"
           style={{ top: HEADER_OFFSET, height: viewport }}
         >
           <MarqueeStrip />

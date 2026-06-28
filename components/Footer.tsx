@@ -6,8 +6,7 @@ import BookCallModal from "./BookCallModal";
 export function Footer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <div className="relative min-h-screen bg-black text-white flex flex-col pt-24 sm:pt-32 lg:pt-40">
-      {/* Top bar: Links + CTA - responsive layout */}
+    <div className="relative min-h-screen bg-transparent text-white flex flex-col pt-24 sm:pt-32 lg:pt-40">
       <div className="px-4 sm:px-8 lg:px-20 flex flex-col sm:flex-row sm:flex-wrap sm:justify-between sm:items-start gap-8 sm:gap-4 pt-6 sm:pt-8 z-10">
         {/* Menu & Social - stack on mobile, row on larger */}
         <div className="flex flex-wrap gap-8 sm:gap-16 lg:gap-24">
