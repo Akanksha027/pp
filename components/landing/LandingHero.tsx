@@ -278,41 +278,63 @@ export function LandingHero() {
 
   if (isMobile) {
     return (
-      <div className="landing-hero-mobile">
-        <div className="landing-hero-mobile-intro">{renderHeroCopy()}</div>
+      <div className="landing-hero-mobile" style={{ position: "relative", overflow: "hidden", backgroundColor: "#000000" }}>
+        {/* Background Video */}
+        <video
+          src="/bg.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            zIndex: 0,
+            opacity: 0.6,
+            pointerEvents: "none",
+          }}
+        />
 
-        <div className="landing-hero-mobile-grid">
-          {FEATURED_PROJECTS.map((project) => (
-            <Link
-              key={project.href}
-              href={project.href}
-              className="landing-hero-mobile-card group"
-            >
-              <ProjectMedia
-                src={project.image}
-                alt={project.title}
-                className="landing-project-card-img"
-                sizes="50vw"
-              />
-              <div className="landing-hero-mobile-card-label">
-                <div
-                  className="text-xs font-bold text-white"
-                  style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
-                >
-                  {project.title}
+        <div style={{ position: "relative", zIndex: 10 }}>
+          <div className="landing-hero-mobile-intro">{renderHeroCopy()}</div>
+
+          <div className="landing-hero-mobile-grid">
+            {FEATURED_PROJECTS.map((project) => (
+              <Link
+                key={project.href}
+                href={project.href}
+                className="landing-hero-mobile-card group"
+              >
+                <ProjectMedia
+                  src={project.image}
+                  alt={project.title}
+                  className="landing-project-card-img"
+                  sizes="50vw"
+                />
+                <div className="landing-hero-mobile-card-label">
+                  <div
+                    className="text-xs font-bold text-white"
+                    style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+                  >
+                    {project.title}
+                  </div>
+                  <div className="mt-0.5 text-[10.5px] text-white/60">
+                    {project.category}
+                  </div>
                 </div>
-                <div className="mt-0.5 text-[10.5px] text-white/60">
-                  {project.category}
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
+              </Link>
+            ))}
+          </div>
 
-        <ExploreLink className="mt-6 mb-2" />
+          <ExploreLink className="mt-6 mb-2" />
 
-        <div className="landing-social-proof-bar landing-hero-mobile-social">
-          {renderSocialProof()}
+          <div className="landing-social-proof-bar landing-hero-mobile-social">
+            {renderSocialProof()}
+          </div>
         </div>
       </div>
     );
