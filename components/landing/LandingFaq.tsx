@@ -7,23 +7,15 @@ import { mainFont } from "@/lib/fonts";
 const FAQS = [
   {
     q: "What kind of projects do you take on?",
-    a: "I build full-stack web and mobile products: SaaS platforms, booking systems, dashboards, APIs, and freelance brand sites. From MVPs to production systems deployed on GCP with Docker.",
-  },
-  {
-    q: "Do you work with international clients?",
-    a: "Yes. I've delivered freelance projects across South Africa, the Middle East, West Africa, and India. Remote collaboration with async updates and clear milestones works well for me.",
+    a: "I build full-stack web and mobile products: SaaS platforms, booking systems, dashboards, and freelance brand sites.",
   },
   {
     q: "What's your typical tech stack?",
-    a: "Next.js and React for web, React Native for mobile, TypeScript throughout, Node/Express or ASP.NET for APIs, Rust for systems and performance-critical work, PostgreSQL or MongoDB for data, and Docker + GCP for deployment.",
+    a: "Next.js and React for web, React Native for mobile, TypeScript throughout, Node/Express for APIs.",
   },
   {
     q: "How long does a typical project take?",
     a: "A focused MVP usually takes 4-8 weeks. Larger platforms or multi-module systems can run 2-4 months. I scope timelines upfront and break work into shippable milestones.",
-  },
-  {
-    q: "Can you join an existing codebase?",
-    a: "Absolutely. I'm comfortable jumping into existing Next.js, React Native, Node, ASP.NET, or Rust codebases, fixing bugs, adding features, improving performance, or helping with architecture decisions.",
   },
   {
     q: "How do we get started?",

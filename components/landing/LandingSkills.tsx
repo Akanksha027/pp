@@ -12,24 +12,19 @@ const BAR_LABELS = ["Precise", "Structured", "Focused", "Visual Language"] as co
 
 const SKILLS = [
   {
-    title: "Web & Mobile Development",
+    title: "App Development",
     description:
-      "Building scalable web and mobile applications with React, Next.js, React Native, and TypeScript. Clean architecture, performance, and responsive UI from front-end to cross-platform apps.",
+      "Building scalable, cross-platform mobile applications with React Native and modern mobile stacks. Focused on delivering seamless user experiences and robust architectures.",
   },
   {
-    title: "Backend & APIs",
+    title: "Website Development",
     description:
-      "Designing backend systems with Express, ASP.NET, PostgreSQL, MongoDB, and Prisma. RESTful APIs, database design, and server-side logic for production-grade applications.",
+      "Crafting highly performant, responsive web applications using Next.js, React, and TypeScript. Ensuring clean code, fast load times, and engaging user interfaces.",
   },
   {
-    title: "Cloud & Systems",
+    title: "Automated AI Agents",
     description:
-      "Deploying infrastructure with Docker and GCP. Systems programming in Rust, ASP.NET services, protocol design, and applied AI using Python and modern tooling to build reliable, scalable systems.",
-  },
-  {
-    title: "AI & Product Engineering",
-    description:
-      "Shipping applied AI features, automation pipelines, and full product flows, from research tools and agents to real-time dashboards and integration-heavy platforms.",
+      "Developing and deploying intelligent automated agents and AI pipelines to streamline workflows, enhance productivity, and solve complex problems using modern AI tools.",
   },
 ] as const;
 

@@ -154,7 +154,7 @@ export function LandingHero() {
         <span className="landing-hero-heading-light">I build scalable </span>
         <br />
         <span className="landing-hero-heading-bold text-white">
-          web &amp; mobile systems.
+          web &amp; mobile Application.
         </span>
       </h1>
       <p

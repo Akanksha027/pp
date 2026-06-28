@@ -16,7 +16,7 @@ export function LandingPage() {
       <LandingStats />
       <LandingSkills />
       <LandingPractice />
-      <LandingTestimonials />
+      {/* <LandingTestimonials /> */}
       <LandingFaq />
       <LetsConnect />
       <Footer />
