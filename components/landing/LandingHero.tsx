@@ -33,18 +33,6 @@ const SCROLL_RANGE = 2400;
 const HEADER_OFFSET = 80;
 const BOTTOM_BUFFER = 180;
 
-const TECH_LOGOS = [
-  "Next.js",
-  "React Native",
-  "TypeScript",
-  "PostgreSQL",
-  "GCP",
-  "Next.js",
-  "React Native",
-  "TypeScript",
-  "PostgreSQL",
-  "GCP",
-];
 
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 const clamp = (v: number, lo = 0, hi = 1) => Math.max(lo, Math.min(hi, v));
@@ -184,27 +172,6 @@ export function LandingHero() {
     </>
   );
 
-  const renderSocialProof = () => (
-    <div className="landing-social-proof-inner">
-      <div className="landing-clients-info">
-        <div className="landing-clients-meta">
-          <div className="landing-stars">★★★★★</div>
-          <span className="landing-clients-count">
-            35+ projects · 8 countries
-          </span>
-        </div>
-      </div>
-      <div className="landing-logos-marquee-wrapper">
-        <div className="landing-logos-track">
-          {TECH_LOGOS.map((logo, i) => (
-            <div key={i} className="landing-logo-item">
-              {logo}
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
 
   const renderProjectCards = () =>
     FEATURED_PROJECTS.map((project, i) => {
@@ -313,9 +280,6 @@ export function LandingHero() {
 
           <ExploreLink className="mt-6 mb-2" />
 
-          <div className="landing-social-proof-bar landing-hero-mobile-social">
-            {renderSocialProof()}
-          </div>
         </div>
       </div>
     );
@@ -378,21 +342,6 @@ export function LandingHero() {
             }}
           />
 
-          <div
-            className="landing-social-proof-bar"
-            style={{
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-              right: 0,
-              transform: `translateY(${spSlideY}px)`,
-              opacity: socialProofOpacity,
-              pointerEvents: prog > 0.5 ? "none" : "auto",
-              zIndex: 20,
-            }}
-          >
-            {renderSocialProof()}
-          </div>
         </div>
       </div>
     </>
